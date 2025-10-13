@@ -1,7 +1,7 @@
 /* Custom CSS for AutoDetailing Website */
 
 /* Root Variables */
-:root {
+/* :root {
     --primary-purple: #8b5cf6;
     --primary-pink: #ec4899;
     --primary-cyan: #06b6d4;
@@ -14,7 +14,30 @@
     --border-color: rgba(139, 92, 246, 0.2);
     --glow-purple: rgba(139, 92, 246, 0.3);
     --glow-pink: rgba(236, 72, 153, 0.3);
+} */
+:root {
+  /* 🔴 Multi-tone red gradient shades */
+  --primary-purple: #8b0000;  /* dark red (base) */
+  --primary-pink: #ff4d4d;    /* bright coral red */
+  --primary-cyan: #ffd1d1;    /* very light pinkish red for soft highlight */
+
+  /* 🖤 Background & text */
+  --dark-bg: #000000;
+  --dark-gray: #111827;
+  --medium-gray: #374151;
+  --light-gray: #6b7280;
+  --text-light: #f9fafb;
+  --text-muted: #9ca3af;
+
+  /* ✨ Borders & glow */
+  --border-color: rgba(255, 77, 77, 0.5);
+  --glow-purple: rgba(139, 0, 0, 0.7);
+  --glow-pink: rgba(255, 77, 77, 0.6);
 }
+
+
+
+
 
 /* Global Styles */
 * {
