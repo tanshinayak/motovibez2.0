@@ -7,7 +7,8 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/custom.css">
     
@@ -23,9 +24,9 @@
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#home">
-                <div class="logo-icon me-2">MV</div>
+                <img src="components/motovibez.jpeg" alt="" class="logo-icon me-2">
                 <div class="d-flex flex-column">
-                    <span class="logo-text">MotoVibez</span>
+                    <span class="logo-text">Moto<span class="gradient-text">Vibez</span></span>
                     <h6>Air Nox Certified</h6>
                 </div>
             </a>
@@ -42,9 +43,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#ppf">Paint Protection Film (PPF)</a></li>
+                            <li><a class="dropdown-item" href="#ceramic">Ceramic Coating</a></li>
+                            <li><a class="dropdown-item" href="#detailing">Car Washing & Detailing</a></li>
+                            <li><a class="dropdown-item" href="#leather">Leather Protection</a></li>
+                            <li><a class="dropdown-item" href="#wheel">Wheel Protection</a></li>
+                            <li><a class="dropdown-item" href="#window">Window Tinting</a></li>
+                            <li><a class="dropdown-item" href="#polishing">Rubbing & Polishing</a></li>
+                        </ul>
                     </li>
+
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
                     </li> -->
@@ -55,7 +68,6 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <button class="btn btn-gradient">Get Quote</button>
             </div>
         </div>
     </nav>
@@ -104,7 +116,7 @@
                         <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-4">
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-shield-alt text-purple me-2"></i>
-                                <span class="small">Lifetime Warranty</span>
+                                <span class="small">Upto 12 years Warrenty</span>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-sparkles text-pink me-2"></i>
@@ -147,7 +159,7 @@
             <!-- Services Grid -->
             <div class="row g-4">
                 <!-- Service 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100"  id="ppf">
                     <div class="service-card h-100">
                         <div class="service-icon gradient-purple">
                             <i class="fas fa-shield-alt"></i>
@@ -155,8 +167,14 @@
                         <h4>Paint Protection Film (PPF)</h4>
                         <p>Ultimate protection against rock chips, scratches, and UV damage with premium self-healing film.</p>
                         <ul class="service-features">
+                            <ul>PPF Types
+                             <li>Gloss</li>
+                             <li>Matte</li>
+                             <li>Coloured</li>
+                            </ul>
+                             
                             <li>Self-healing technology</li>
-                            <li>10-year warranty</li>
+                            <li>12-year warranty</li>
                             <li>Invisible protection</li>
                             <li>Resale value preservation</li>
                         </ul>
@@ -164,7 +182,7 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" id="ceramic">
                     <div class="service-card h-100">
                         <div class="service-icon gradient-pink">
                             <i class="fas fa-sparkles"></i>
@@ -181,13 +199,13 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"  id="detailing">
                     <div class="service-card h-100">
                         <div class="service-icon gradient-cyan">
                             <i class="fas fa-car"></i>
                         </div>
                         <h4>Car Washing & Detailing</h4>
-                        <p>Comprehensive interior and exterior cleaning to maintain your car’s pristine appearance, from the engine bay to the tires.</p>
+                        <p>360 degree washing and cleaning along with checklist</p>
                         <ul class="service-features">
                             <li>Complete interior cleaning</li>
                             <li>Exterior hand wash & wax</li>
@@ -199,7 +217,7 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400"  id="leather">
                     <div class="service-card h-100">
                         <div class="service-icon gradient-pink">
                             <i class="fas fa-couch"></i>
@@ -217,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400"  id="wheel">
                     <div class="service-card h-100">
                        <div class="service-icon gradient-blue">
                             <i class="fas fa-cogs"></i>
@@ -236,7 +254,7 @@
                 </div>
 
                 <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500"  id="window">
                     <div class="service-card h-100">
                         <div class="service-icon gradient-yellow">
                             <i class="fas fa-bolt"></i>
@@ -253,7 +271,7 @@
                 </div>
 
                 <!-- Service 6 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600"  id="polishing">
                     <div class="service-card h-100">
                         <div class="service-icon gradient-cyan">
                             <i class="fas fa-magic"></i>
@@ -352,7 +370,7 @@
                         <span class="gradient-text">Air Nox Certified</span>
                     </h4>
                     <p class="mb-4">
-                        With over 10 years of experience in automotive detailing and paint protection, and having Air Nox Cetification we bring passion, 
+                        With over 10 years of experience in automotive detailing and paint protection, and having Air Nox Cetification(12 years of experience) we bring passion, 
                         precision, and anime-inspired aesthetics to every project. Our team of certified professionals 
                         uses only the finest materials and cutting-edge techniques.
                     </p>
@@ -418,10 +436,14 @@
                             </div>
                             <div>
                                 <h5>Visit Us</h5>
-                                <p>123 Auto Street<br>Car City, CC 12345</p>
-                                <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-outline-light">
-                                    <i class="fas fa-external-link-alt me-1"></i>
-                                    View on Google Maps
+                                <p>Shop No. 455, Sham Nagar<br>Namaste Chowk, Karnal , Haryana 132001</p>
+                                <a 
+                                href="https://www.google.com/maps?q=Shop+No.+455,+Sham+Nagar,+Namaste+Chowk,+Karnal,+Haryana+132001" 
+                                target="_blank" 
+                                class="btn btn-sm btn-outline-light"
+                                >
+                                <i class="fas fa-external-link-alt me-1"></i>
+                                View on Google Maps
                                 </a>
                             </div>
                         </div>
@@ -432,7 +454,7 @@
                             </div>
                             <div>
                                 <h5>Call Us</h5>
-                                <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                                <p><a href="tel:+1234567890">(+91) 8901086801</a></p>
                             </div>
                         </div>
 
@@ -452,8 +474,7 @@
                             </div>
                             <div>
                                 <h5>Business Hours</h5>
-                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>
-                                   Sat - Sun: 9:00 AM - 4:00 PM<br>
+                                <p>Tuesday - Sunday: 10:00 AM - 6:30 PM<br>
                                    </p>
                             </div>
                         </div>
@@ -467,7 +488,7 @@
                             <div class="social-section text-center">
                                 <h4 class="mb-4">Follow Our Journey</h4>
                                 <div class="social-links">
-                                    <a href="#" class="social-link">
+                                    <a href="https://www.instagram.com/motovibe.z?igsh=M2ExcW8zYmppcGZw&utm_source=qr" class="social-link">
                                         <i class="fab fa-instagram"></i>
                                         <span>Instagram</span>
                                     </a>
@@ -475,10 +496,10 @@
                                         <i class="fab fa-facebook"></i>
                                         <span>Facebook</span>
                                     </a> -->
-                                    <a href="#" class="social-link">
+                                    <!-- <a href="#" class="social-link">
                                         <i class="fab fa-youtube"></i>
                                         <span>YouTube</span>
-                                    </a>
+                                    </a> -->
                                     <!-- <a href="#" class="social-link">
                                         <i class="fab fa-tiktok"></i>
                                         <span>TikTok</span>
@@ -488,16 +509,17 @@
                         </div>
                         <div class="col-12">
                             <div class="map-container">
-                                <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuMyJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                                    width="100%" 
-                                    height="300" 
-                                    style="border:0;" 
-                                    allowfullscreen="" 
-                                    loading="lazy" 
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    class="rounded-3">
-                                </iframe>
+                                <iframe
+                            src="https://www.google.com/maps?q=Shop+No.+455,+Sham+Nagar,+Namaste+Chowk,+Karnal,+Haryana+132001&output=embed"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-3">
+                            </iframe>
+
                             </div>
                         </div>
                     </div>
@@ -512,8 +534,11 @@
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <div class="d-flex align-items-center mb-3">
-                        <div class="logo-icon me-2">MV</div>
-                        <span class="logo-text">MotoVibez</span>
+                      <img src="components/motovibez.jpeg" alt="" class="logo-icon me-2">
+                <div class="d-flex flex-column">
+                    <span class="logo-text">Moto<span class="gradient-text">Vibez</span></span>
+                    <h6>Air Nox Certified</h6>
+                </div>
                     </div>
                     <p class="text-secondary">
                         Premium automotive care with anime-inspired aesthetics. 
@@ -566,11 +591,11 @@
                         © 2024 MotoVibez. All rights reserved.
                     </p>
                 </div>
-                <div class="col-md-6 text-md-end">
+                <!-- <div class="col-md-6 text-md-end">
                     <p class="text-secondary small mb-0">
                         Made with <i class="fas fa-heart text-danger"></i> for car enthusiasts
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
