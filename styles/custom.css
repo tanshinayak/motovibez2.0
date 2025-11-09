@@ -15,6 +15,7 @@
     --glow-purple: rgba(139, 92, 246, 0.3);
     --glow-pink: rgba(236, 72, 153, 0.3);
 } */
+ @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Orbitron:wght@700&display=swap');
 :root {
   /* 🔴 Multi-tone red gradient shades */
   --primary-purple: #8b0000;  /* dark red (base) */
@@ -156,6 +157,11 @@ body {
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0; /* smooth alignment */
+}
+/* Add this in styles/custom.css */
+.modal-content {
+  background: #111 !important;
+  border: 1px solid #333;
 }
 
 

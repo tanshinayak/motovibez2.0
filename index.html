@@ -67,7 +67,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <!-- Get in Touch Button -->
+                    <button 
+                    class="btn btn-gradient ms-lg-3 mt-3 mt-lg-0"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#getInTouchModal">
+                    <i class="fas fa-phone me-2"></i> Get in Touch
+                    </button>
+
                 </ul>
+                
             </div>
         </div>
     </nav>
@@ -129,9 +138,10 @@
                 <!-- Hero Image -->
                 <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
                     <div class="hero-image-container">
-                        <img src="https://images.unsplash.com/photo-1661770114976-76657acfd2bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhKRE0lMjBjYXIlMjBhbmltZSUyMHN0eWxlfGVufDF8fHx8MTc1Nzg0NTMyM3ww&ixlib=rb-4.1.0&q=80&w=1080" 
-                             alt="JDM Anime Style Car" 
-                             class="img-fluid rounded-3 hero-car-image">
+                        <img src="https://www.carzspa.com/wp-content/uploads/2023/10/clear-paint-protection.webp"
+     alt="Paint Protection Film Application on Car"
+     class="img-fluid rounded-3 hero-car-image">
+
                         <div class="hero-image-overlay"></div>
                     </div>
                 </div>
@@ -607,6 +617,74 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JavaScript -->
+     <!-- Get in Touch Popup Modal -->
+<div class="modal fade" id="getInTouchModal" tabindex="-1" aria-labelledby="getInTouchLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light rounded-4 shadow-lg">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title gradient-text" id="getInTouchLabel">
+          <i class="fas fa-handshake me-2"></i> Get in Touch with Us
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-4 text-secondary">
+          Want to protect your ride with our premium detailing services? Reach out to us — we’ll get back to you right away!
+        </p>
+      <form id="contactForm">
+  <div class="mb-3">
+    <label for="name" class="form-label">Your Name</label>
+    <input type="text" name="from_name" class="form-control bg-dark text-light border-secondary" id="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Your Email</label>
+    <input type="email" name="reply_to" class="form-control bg-dark text-light border-secondary" id="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea name="message" class="form-control bg-dark text-light border-secondary" id="message" rows="3" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-gradient w-100">
+    <i class="fas fa-paper-plane me-2"></i> Send Message
+  </button>
+</form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="scripts/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Delay popup slightly for better UX
+  setTimeout(() => {
+    const myModal = new bootstrap.Modal(document.getElementById('getInTouchModal'));
+    myModal.show();
+  }, 1500); // popup after 1.5 seconds
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("IJbnVi0OwOnu7bFx3"); // Replace with your EmailJS public key
+  })();
+
+  document.getElementById("contactForm")?.addEventListener("submit", function(event) {
+    event.preventDefault();
+    emailjs.sendForm("service_btg625n", "template_bghq67t", this)
+      .then(function() {
+        alert("✅ Message sent successfully!");
+      }, function(error) {
+        alert("❌ Failed to send message: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+
 </body>
 </html>
